@@ -1,0 +1,12 @@
+<div [ngSwitch]="typeAlert">
+  <div *ngSwitchCase="'success'" class="alert alert-success" role="alert">
+    A simple success alert—check it out with ngSwitch!
+  </div>
+  <div *ngSwitchCase="'danger'" class="alert alert-danger" role="alert">
+    A simple danger alert—check it out with ngSwitch!
+  </div>
+  <div *ngSwitchDefault class="alert alert-dark" role="alert">
+    A simple dark alert—check it out with ngSwitch!
+  </div>
+</div>
+<button class="btn btn-secondary" (click)="typeAlert = 'success'">Success</button>
